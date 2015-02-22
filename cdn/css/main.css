@@ -29,6 +29,11 @@ body {
     font-weight: 300;
     color: #ffffff;
     margin: 1.1em 0;
+    opacity: 0;
+    transition: opacity 1.25s ease-in-out;
+}
+.splash-quote.in {
+    opacity: 1;
 }
 .splash-quote:before,
 .splash-quote:after {
