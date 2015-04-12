@@ -1,0 +1,7 @@
+{
+  "name": "managenet-web",
+  "private": true,
+  "dependencies": {
+    "express": "^4.12.3"
+  }
+}
