@@ -1,6 +1,5 @@
 var express = require('express'),
-    app = express(),
-    port = process.env.PORT || 8000 + Math.floor(Math.random() * 100);
+    app = express();
 
 app.use(function (req, res, next) {
     res.set('X-Powered-By', 'mnet-io');
@@ -8,6 +7,6 @@ app.use(function (req, res, next) {
 });
 
 app.use(express.static(__dirname + '/public'));
-app.listen(process.env.PORT || port, function () {
-    console.log('Listening for connections on :%s', port);
+app.listen(process.env.PORT, function () {
+    console.log('Listening for connections on :%s', process.env.PORT);
 });
